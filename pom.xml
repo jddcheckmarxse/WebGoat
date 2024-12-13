@@ -1,11 +1,15 @@
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.3.5</version>
+    <version>3.3.4</version>
   </parent>
 
   <groupId>org.owasp.webgoat</groupId>
@@ -61,49 +65,45 @@
   </issueManagement>
 
   <properties>
-    <!-- Shared properties with plugins and version numbers across submodules-->
-    <asciidoctorj.version>3.0.0</asciidoctorj.version>
-    <bootstrap.version>5.3.3</bootstrap.version>
-    <cglib.version>3.3.0</cglib.version>
-    <!-- do not update necessary for lesson -->
-    <checkstyle.version>3.6.0</checkstyle.version>
-    <commons-collections.version>3.2.1</commons-collections.version>
-    <commons-compress.version>1.27.1</commons-compress.version>
-    <commons-io.version>2.17.0</commons-io.version>
-    <commons-lang3.version>3.14.0</commons-lang3.version>
-    <commons-text.version>1.12.0</commons-text.version>
-    <guava.version>33.3.1-jre</guava.version>
-    <jacoco.version>0.8.11</jacoco.version>
-    <java.version>21</java.version>
-    <jaxb.version>2.3.1</jaxb.version>
-    <jjwt.version>0.9.1</jjwt.version>
-    <jose4j.version>0.9.3</jose4j.version>
-    <jquery.version>3.7.1</jquery.version>
-    <jsoup.version>1.18.1</jsoup.version>
-    <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
-    <maven-failsafe-plugin.version>2.22.0</maven-failsafe-plugin.version>
-    <maven-jar-plugin.version>3.1.2</maven-jar-plugin.version>
-    <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
-    <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
-    <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
-    <maven.compiler.source>21</maven.compiler.source>
-    <maven.compiler.target>21</maven.compiler.target>
-    <pmd.version>3.15.0</pmd.version>
-    <!-- Use UTF-8 Encoding -->
+    <asciidoctorj.version>2.9.9</asciidoctorj.version>
+    <bootstrap.version>5.3.2</bootstrap.version>
+    <cglib.version>3.2.9</cglib.version>
+    <checkstyle.version>3.5.9</checkstyle.version>
+    <commons-collections.version>3.2.0</commons-collections.version>
+    <commons-compress.version>1.27.0</commons-compress.version>
+    <commons-io.version>2.16.9</commons-io.version>
+    <commons-lang3.version>3.13.9</commons-lang3.version>
+    <commons-text.version>1.11.9</commons-text.version>
+    <guava.version>33.3.0-jre</guava.version>
+    <jacoco.version>0.8.10</jacoco.version>
+    <java.version>20</java.version>
+    <jaxb.version>2.3.0</jaxb.version>
+    <jjwt.version>0.9.0</jjwt.version>
+    <jose4j.version>0.9.2</jose4j.version>
+    <jquery.version>3.7.0</jquery.version>
+    <jsoup.version>1.18.0</jsoup.version>
+    <maven-compiler-plugin.version>3.7.9</maven-compiler-plugin.version>
+    <maven-failsafe-plugin.version>2.21.9</maven-failsafe-plugin.version>
+    <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+    <maven-javadoc-plugin.version>3.1.0</maven-javadoc-plugin.version>
+    <maven-source-plugin.version>3.0.9</maven-source-plugin.version>
+    <maven-surefire-plugin.version>3.5.1</maven-surefire-plugin.version>
+    <maven.compiler.source>20</maven.compiler.source>
+    <maven.compiler.target>20</maven.compiler.target>
+    <pmd.version>3.14.9</pmd.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <thymeleaf.version>3.1.2.RELEASE</thymeleaf.version>
+    <thymeleaf.version>3.1.1.RELEASE</thymeleaf.version>
     <waittimeForServerStart>60</waittimeForServerStart>
-    <webdriver.version>5.9.2</webdriver.version>
+    <webdriver.version>5.9.1</webdriver.version>
     <webgoat.context>/</webgoat.context>
     <webgoat.sslenabled>false</webgoat.sslenabled>
-    <webjars-locator-core.version>0.59</webjars-locator-core.version>
+    <webjars-locator-core.version>0.58</webjars-locator-core.version>
     <webwolf.context>/</webwolf.context>
-    <wiremock.version>3.9.2</wiremock.version>
-    <xml-resolver.version>1.2</xml-resolver.version>
-    <xstream.version>1.4.5</xstream.version>
-    <!-- do not update necessary for lesson -->
-    <zxcvbn.version>1.9.0</zxcvbn.version>
+    <wiremock.version>3.9.1</wiremock.version>
+    <xml-resolver.version>1.1</xml-resolver.version>
+    <xstream.version>1.4.4</xstream.version>
+    <zxcvbn.version>1.8.9</zxcvbn.version>
   </properties>
 
   <dependencyManagement>
@@ -111,7 +111,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-exec</artifactId>
-        <version>1.4.0</version>
+        <version>1.3.9</version>
       </dependency>
       <dependency>
         <groupId>org.asciidoctor</groupId>
@@ -119,7 +119,6 @@
         <version>${asciidoctorj.version}</version>
       </dependency>
       <dependency>
-        <!-- jsoup HTML parser library @ https://jsoup.org/ -->
         <groupId>org.jsoup</groupId>
         <artifactId>jsoup</artifactId>
         <version>${jsoup.version}</version>
@@ -152,13 +151,12 @@
       <dependency>
         <groupId>com.auth0</groupId>
         <artifactId>jwks-rsa</artifactId>
-        <version>0.22.1</version>
+        <version>0.22.0</version>
       </dependency>
-      <!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
       <dependency>
         <groupId>com.auth0</groupId>
         <artifactId>java-jwt</artifactId>
-        <version>4.4.0</version>
+        <version>4.3.9</version>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
@@ -213,7 +211,7 @@
       <dependency>
         <groupId>org.jruby</groupId>
         <artifactId>jruby</artifactId>
-        <version>9.4.9.0</version>
+        <version>9.4.8.9</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -225,45 +223,51 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-validation</artifactId>
+      <version>3.3.4</version>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <scope>provided</scope>
       <optional>true</optional>
+      <version>1.18.28</version>
     </dependency>
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>testcontainers</artifactId>
-      <version>1.20.3</version>
+      <version>1.20.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>junit-jupiter</artifactId>
-      <version>1.20.3</version>
+      <version>1.20.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>javax.xml.bind</groupId>
       <artifactId>jaxb-api</artifactId>
-      <version>${jaxb.version}</version>
+      <version>2.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
+      <version>3.3.4</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
+      <version>3.3.4</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
+      <version>9.22.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-hsqldb</artifactId>
+      <version>9.22.0</version>
     </dependency>
     <dependency>
       <groupId>org.asciidoctor</groupId>
@@ -272,30 +276,37 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
+      <version>3.3.4</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-security</artifactId>
+      <version>3.3.4</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
+      <version>3.3.4</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-oauth2-client</artifactId>
+      <version>3.3.4</version>
     </dependency>
     <dependency>
       <groupId>org.thymeleaf.extras</groupId>
       <artifactId>thymeleaf-extras-springsecurity6</artifactId>
+      <version>3.1.1.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>jakarta.servlet</groupId>
       <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.hsqldb</groupId>
       <artifactId>hsqldb</artifactId>
+      <version>2.7.1</version>
     </dependency>
     <dependency>
       <groupId>org.jsoup</groupId>
@@ -324,11 +335,12 @@
     <dependency>
       <groupId>com.auth0</groupId>
       <artifactId>jwks-rsa</artifactId>
+      <version>0.22.0</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
     <dependency>
       <groupId>com.auth0</groupId>
       <artifactId>java-jwt</artifactId>
+      <version>4.3.9</version>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
@@ -341,6 +353,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
+      <version>3.13.9</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -365,27 +378,31 @@
     <dependency>
       <groupId>jakarta.xml.bind</groupId>
       <artifactId>jakarta.xml.bind-api</artifactId>
+      <version>3.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.sun.xml.bind</groupId>
       <artifactId>jaxb-impl</artifactId>
+      <version>3.0.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.github.terma</groupId>
       <artifactId>javaniotcpproxy</artifactId>
-      <version>1.6</version>
+      <version>1.5</version>
       <scope>test</scope>
     </dependency>
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
+      <version>3.3.4</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.springframework.security</groupId>
       <artifactId>spring-security-test</artifactId>
+      <version>6.1.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -395,11 +412,13 @@
     <dependency>
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
+      <version>5.3.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-properties-migrator</artifactId>
+      <version>3.3.4</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
@@ -428,11 +447,11 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>3.3.4</version>
         <configuration>
           <excludeDevtools>true</excludeDevtools>
           <executable>true</executable>
           <mainClass>org.owasp.webgoat.server.StartWebGoat</mainClass>
-          <!-- See http://docs.spring.io/spring-boot/docs/current/reference/html/howto-build.html#howto-extract-specific-libraries-when-an-executable-jar-runs -->
           <requiresUnpack>
             <dependency>
               <groupId>org.asciidoctor</groupId>
@@ -451,6 +470,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
+        <version>3.3.0</version>
         <executions>
           <execution>
             <id>add-integration-test-source-as-test-sources</id>
@@ -469,6 +489,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
+        <version>2.21.9</version>
         <configuration>
           <environmentVariables>
             <WEBGOAT_SSLENABLED>${webgoat.sslenabled}</WEBGOAT_SSLENABLED>
@@ -503,10 +524,9 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>${maven-surefire-plugin.version}</version>
+        <version>3.5.1</version>
         <configuration>
           <forkedProcessTimeoutInSeconds>600</forkedProcessTimeoutInSeconds>
-          <!-- Necessary for vulnerable components lesson -->
           <argLine>--add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED
           --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED
           --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED
@@ -520,7 +540,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>${checkstyle.version}</version>
+        <version>3.5.9</version>
         <configuration>
           <consoleOutput>true</consoleOutput>
           <failsOnError>true</failsOnError>
@@ -532,15 +552,15 @@
       <plugin>
         <groupId>com.diffplug.spotless</groupId>
         <artifactId>spotless-maven-plugin</artifactId>
-        <version>2.41.1</version>
+        <version>2.41.0</version>
         <configuration>
           <formats>
             <format>
               <includes>
                 <include>.gitignore</include>
               </includes>
-              <trimTrailingWhitespace></trimTrailingWhitespace>
-              <endWithNewline></endWithNewline>
+              <trimTrailingWhitespace/>
+              <endWithNewline/>
               <indent>
                 <tabs>true</tabs>
                 <spacesPerTab>4</spacesPerTab>
@@ -551,7 +571,7 @@
             <includes>
               <include>**/*.md</include>
             </includes>
-            <flexmark></flexmark>
+            <flexmark/>
           </markdown>
           <java>
             <includes>
@@ -559,7 +579,7 @@
               <include>src/test/java/**/*.java</include>
               <include>src/it/java/**/*.java</include>
             </includes>
-            <removeUnusedImports></removeUnusedImports>
+            <removeUnusedImports/>
             <googleJavaFormat>
               <style>GOOGLE</style>
               <reflowLongStrings>true</reflowLongStrings>
@@ -593,7 +613,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>3.4.9</version>
         <executions>
           <execution>
             <id>restrict-log4j-versions</id>
@@ -617,6 +637,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.9</version>
       </plugin>
     </plugins>
   </build>
@@ -635,6 +656,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>build-helper-maven-plugin</artifactId>
+            <version>3.3.0</version>
             <executions>
               <execution>
                 <id>reserve-container-port</id>
@@ -654,7 +676,7 @@
           <plugin>
             <groupId>org.honton.chas</groupId>
             <artifactId>process-exec-maven-plugin</artifactId>
-            <version>0.9.2</version>
+            <version>0.9.1</version>
             <executions>
               <execution>
                 <id>start-jar</id>
@@ -662,7 +684,6 @@
                   <goal>start</goal>
                 </goals>
                 <phase>pre-integration-test</phase>
-
                 <configuration>
                   <workingDir>${project.build.directory}</workingDir>
                   <environment>
@@ -724,12 +745,12 @@
           <plugin>
             <groupId>org.owasp</groupId>
             <artifactId>dependency-check-maven</artifactId>
+            <version>8.3.0</version>
             <configuration>
               <failBuildOnCVSS>7</failBuildOnCVSS>
               <skipProvidedScope>false</skipProvidedScope>
               <skipRuntimeScope>false</skipRuntimeScope>
               <suppressionFiles>
-                <!--suppress UnresolvedMavenProperty -->
                 <suppressionFile>${maven.multiModuleProjectDirectory}/config/dependency-check/project-suppression.xml</suppressionFile>
               </suppressionFiles>
             </configuration>
@@ -745,7 +766,6 @@
       </build>
     </profile>
     <profile>
-      <!-- run with: mvn test -Pcoverage -->
       <id>coverage</id>
       <activation>
         <activeByDefault>false</activeByDefault>
@@ -755,7 +775,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>${maven-surefire-plugin.version}</version>
+            <version>3.5.1</version>
             <configuration>
               <argLine>--add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED
           --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED
@@ -772,6 +792,7 @@
           <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.10</version>
             <executions>
               <execution>
                 <id>before-unit-test</id>
@@ -822,3 +843,4 @@
     </profile>
   </profiles>
 </project>
+```
